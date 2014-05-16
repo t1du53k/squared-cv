@@ -14,7 +14,7 @@ for (var row = 0; row < 20; row += 1) {
                     emptySquare = $("<div class='empty top miniblock'></div>");
                     squaredIcon.append(emptySquare);
                 }
-            } else {
+            }   else {
                 if (column == 0) {
                     emptySquare = $("<div class='empty left miniblock'></div>");
                     squaredIcon.append(emptySquare);
@@ -26,6 +26,9 @@ for (var row = 0; row < 20; row += 1) {
                     squaredIcon.append(emptySquare);
                 }
             }
+        } else if (filling == 2) {
+            filledSquare = $("<div class='semifilled filled miniblock'></div>");
+            squaredIcon.append(filledSquare);
         } else if (filling == 2) {
             filledSquare = $("<div class='semifilled filled miniblock'></div>");
             squaredIcon.append(filledSquare);
