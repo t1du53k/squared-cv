@@ -10,21 +10,27 @@ body {
 .icon {
     width: 100%;
     height: 100%;
-    background-color: #63AA9C;
     border-radius: 100%;
     overflow: hidden;
 }
+.squaredRow {
+    width: 100%;
+    height: 5%;
+}
 .miniblock {
-    width: 4.5%;
-    height: 4.5%;
+    width: 5%;
+    height: 100%;
     background-color: #E9633B;
     float: left;
-    margin: 0px 0.5% 0.5% 0px;
 }
-.filled {
+
+.whitened {
+    background-color: white;
+}
+.empty {
     background-color: #E9633B;
 }
-.whitened {
+.filled {
     background-color: white;
 }
 .filled.shining {
@@ -35,7 +41,9 @@ body {
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 }
-.semifilled.shining {
+.accent {
+}
+.accent.shining {
     background-color: #E9633B;
     -webkit-transition: background-color 500ms linear;
     -moz-transition: background-color 500ms linear;
@@ -43,18 +51,13 @@ body {
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 }
-.empty {
-    background-color: #E9633B;
+.progress {
 }
-.left {
-    margin-left: 0.25%;
-}
-.right {
-    margin-right: 0.25%;
-}
-.top {
-    margin-top: 0.25%;
-}
-.bottom {
-    margin-bottom: 0.25%;
+.progress.shining {
+    background-color: green;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
