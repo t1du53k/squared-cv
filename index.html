@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>MiniSquares</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css.map">
     <!-- Google Fonts -->
     <!-- font-family: 'Fugaz One', cursive; -->
     <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
@@ -16,13 +16,12 @@
 
 </head>
 <body>
-    .wrapper
     <div class="wrapper">
         <div id="squaredicon">
         </div>
     </div>
-    <script src="paintingarray.js"></script>
-    <script src="fillIcon.js"></script>
+    <script src="./js/paintingarray.js"></script>
+    <script src="./js/fillIcon.js"></script>
     <script>
         $("#squaredicon").click(function() {
             $(".filled").toggleClass("shining");
