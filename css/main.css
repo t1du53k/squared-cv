@@ -1,0 +1,338 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    margin: 0px;
+    font-family: Arial,sans-serif;
+    background-color: #f5f8fa;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    box-shadow: 0 5px 5px rgba(136,153,166,0.15);
+    overflow: hidden;
+}
+.squaredRow {
+    width: 100%;
+    height: 5%;
+}
+.miniblock {
+    width: 5%;
+    height: 100%;
+    background-color: #419479;
+    float: left;
+    margin: 0px;
+    border-radius: 1px;
+}
+
+.whitened {
+    background-color: white;
+}
+.filled {
+    background-color: #DFD762;
+}
+.filled.shining {
+    background-color: #E9633B;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.accent {
+}
+.accent.shining {
+    background-color: #419479;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.empty {
+    background-color: #DF8C62;
+}
+.progresss {
+    background-color: #DF8C62;
+}
+.progresss.shining {
+    background-color: #6E4997;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.center {
+    margin: 0px auto;
+}
+
+.zdjecie {
+    bottom: 0px;
+    left: 0px;
+    height: 150px;
+    width: 150px;
+}
+
+#headerRowInfo {
+    height: 200px;
+}
+
+.profileWithNav {
+    width: 1170px;
+    position: relative;
+}
+
+.profileHeader {
+    height: 300px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 5px rgba(136,153,166,0.15);
+    background-image: url(../img/profileBg.png);
+    color: white;
+}
+
+.profileAvatar {
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #fff;
+    box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    border-radius: 12px;
+    background-color: green;
+    background-size: contain;
+    background-image: url(../img/IMG_20140508_173018.jpg)
+}
+
+#navContainer {
+
+}
+
+.profileNav {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+}
+
+.profileNavList {
+    margin: 0px 0px 0px 50px;
+    padding: 0px;
+    list-style: none;
+
+
+}
+
+.profileNavItem {
+    display: inline-block;
+    padding: 10px;
+}
+
+.profileName {
+    position: absolute;
+    padding: 0px 25px;
+    top: 125px;
+    left: 310px;
+    font-weight: bold;
+}
+
+#profileContainer {
+    padding: 0px;
+}
+
+#skills {
+}
+
+.skillsContainer {
+    background-color: #fff;
+    color: black;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(136,153,166,0.15);
+    padding-bottom: 50px;
+}
+
+#skillsRow {
+    margin: 0px;
+}
+
+.iconContainer {
+    display: inline-block;
+    width: 33%;
+}
+
+.skillsIcon {
+    background-color: white;
+    border-radius:15px;
+    margin: 5px;
+}
+
+.skillsTitle {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.skillsHeader {
+    color: #0084B4;
+}
+
+.coloredbox {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.bluebox {
+}
+
+.orangebox {
+    background-color: #ffb300;
+}
+
+.redbox {
+    background-color: #f30021
+}
+
+.schoolworklist {
+    list-style: none;
+}
+
+.schoolworklistitem {
+    font-size: 1em;
+    display: inline;
+}
+
+.schoolName {
+    display: inline-block;
+}
+
+.schoolTimeline {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.startingDate {
+    position: absolute;
+    top: -1.5em;
+    left: -10px;
+}
+
+.endingDate {
+    position: absolute;
+    top: -1.5em;
+    right: -10px;
+}
+
+.schoolWorkBox {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #f5f8fa;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 5px 5px rgba(136,153,166,0.15);
+
+}
+
+.verticalLine {
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    right: -6px;
+    background-color: #aaa;
+}
+
+.blueBox.finished {
+    background-color: #0084B4;
+}
+
+.blueBox.unfinished {
+    background-color: #fca;
+}
+.orangeBox.finished {
+    background-color: #ffb404;
+}
+
+.orangeBox.unfinished {
+    background-color: #ffd6aa;
+}
+.redBox.finished {
+    background-color: #f40425;
+}
+
+.redBox.unfinished {
+    background-color: #fa7385;
+}
+.greenBox.finished {
+    background-color: #3fdf04;
+}
+
+.greenBox.unfinished {
+    background-color: #91ef6e;
+}
+.timeLineAxis {
+    position: relative;
+    height: 4px;
+    background-color: #eef;
+}
+
+.schoolOneTimeLine {
+    position: absolute;
+    left: 20px;
+    top: -25px
+}
+
+.schoolTwoTimeLine {
+    position: absolute;
+    left: 110px;
+    top: -25px
+}
+
+.workOneTimeLine {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.timelinerow {
+    padding: 0px 50px;
+}
+
+.elo {
+    height: 200px;
+}
+
+.schoolWorkTimeLine {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.workTwoTimeLine {
+    position: absolute;
+    left: 140px;
+    top: 35px;
+}
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: #428bca;
+}
+.profileNavLink:link .profileNavLink:active .profileNavLink:visited {
+    color: white;
+}
