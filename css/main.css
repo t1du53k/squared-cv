@@ -90,27 +90,26 @@ body {
 }
 
 .profileHeader {
-    height: 300px;
+    height: 400px;
     position: relative;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 5px 5px rgba(136,153,166,0.15);
-    background-image: url(../img/profileBg.png);
-    color: white;
+    background-image: url(../img/profileBg3.png);
+    color: black;
 }
 
 .profileAvatar {
+    display: none;
     position: absolute;
     bottom: -20px;
     left: 50px;
     height: 200px;
     width: 200px;
     border: 5px solid #fff;
-    box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    box-shadow: 1px 1px 1px 1px rgba(136,153,166,0.4);
     border-radius: 12px;
-    background-color: green;
-    background-size: contain;
-    background-image: url(../img/IMG_20140508_173018.jpg)
+    overflow: hidden;
 }
 
 #navContainer {
@@ -141,9 +140,10 @@ body {
 .profileName {
     position: absolute;
     padding: 0px 25px;
-    top: 125px;
-    left: 310px;
+    bottom: 50px;
+    left: 280px;
     font-weight: bold;
+    color: #0084B4;
 }
 
 #profileContainer {
@@ -245,7 +245,16 @@ body {
     border-radius: 10px;
     padding: 8px;
     box-shadow: 0 5px 5px rgba(136,153,166,0.15);
-
+    display: none;
+}
+.workBox {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #f5f8fa;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 5px 5px rgba(136,153,166,0.15);
+    display: none;
 }
 
 .verticalLine {
@@ -319,6 +328,7 @@ body {
 .schoolWorkTimeLine {
     border: 2px solid #ccc;
     border-radius: 5px;
+    display: none;
 }
 
 .workTwoTimeLine {
@@ -327,12 +337,28 @@ body {
     top: 35px;
 }
 a {
-    color: white;
+    color: black;
 }
 a:hover {
     text-decoration: none;
     color: #428bca;
 }
 .profileNavLink:link .profileNavLink:active .profileNavLink:visited {
-    color: white;
+    color: black;
+}
+
+.avatarimg {
+    width:200px;
+    position: absolute;
+    top:-40px
+}
+
+
+
+.educationBox {
+    display: none;
+}
+
+.experienceBox {
+    display: none;
 }
