@@ -15,8 +15,8 @@ body {
     background-color: #f5f8fa;
 }
 .squaredicon {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 5%;
     box-shadow: 0 5px 5px rgba(136,153,166,0.15);
     overflow: hidden;
@@ -31,7 +31,7 @@ body {
     background-color: #78B3C1;
     float: left;
     margin: 0px;
-    border-radius: 1px;
+    border-radius: 0px;
 }
 
 .whitened {
@@ -356,11 +356,13 @@ a:hover {
 
 
 .educationBox {
-    width: 100%;
+    width: 96%;
+    margin: 0px 2%;
 }
 
 .experienceBox {
-    width: 100%;
+    width: 96%;
+    margin: 0px 2%;
 }
 
 .skillBox {

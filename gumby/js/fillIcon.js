@@ -42,32 +42,52 @@ function appendMiniBlocks() {
 
 function displayProgresss() {
     squaredIcon.each(function (index) {
-        $(this).on("click", (function () {
+        //$(this).on("click", (function () {
             currentIcon = $(this);
             currentIconID = currentIcon.attr("id");
             currentIconClass = currentIcon.attr("class");
-            var n = currentIconClass.search("progress");
-            progress = currentIconClass.slice(n + 8, n + 10);
-            currentIconProgressPercentage = $("." + currentIconID + "ProgressPercentage");
-            console.log(currentIconProgressPercentage);
-            fillIcon();
-        }));
+            var n = currentIconClass.search("progress"),
+                progress = currentIconClass.slice(n + 8, n + 10),
+                currentIconProgressPercentage = $("." + currentIconID + "ProgressPercentage");
+            console.log(currentIconID);
+            fillIcon(currentIconID, progress, currentIconProgressPercentage);
+        //})
+    });
 
-        function fillIcon() {
-            var timesRun = 0;
-            var interval = setInterval(function () {
-                timesRun += 1;
-                if (timesRun >= progress) {
+        function fillIcon(currentlyFilledIconID, currentlyFilledIconProgress, currentTextName) {
+            var timesRun = 0,
+                interval = setInterval(function () {
+                    timesRun += 1;
+                if (timesRun >= currentlyFilledIconProgress) {
                     clearInterval(interval);
                 }
-                var currentRowIndex = timesRun-1
-                currentRow = $("#" + currentIconID + " .squaredRow" + currentRowIndex);
-                currentBoxes = currentRow.children();
+                var currentlyFilledRowIndex = timesRun-1,
+                    currentlyFilledRow = $("#" + currentlyFilledIconID + " .squaredRow" + currentlyFilledRowIndex),
+                    currentBoxes = currentlyFilledRow.children();
                 currentBoxes.addClass("shining");
-                currentIconProgressPercentage.text(timesRun*5 + "%");
+                currentTextName.text(timesRun*5 + "%");
             }, 50);
+        }
+    };
+//);
+//};
+appendMiniBlocks();
+
+function fromTop() {
+    var iconOffset = $(".squaredicon").offset().top,
+        windowHeight = $(window).height(),
+        skillsTimesShown = 0;
+    $(window).scroll(function() {
+        if (skillsTimesShown == 1) {
+        }
+        else {
+            if ($(this).scrollTop() + windowHeight > iconOffset) {
+                displayProgresss();
+                skillsTimesShown = 1;
+            } else {
+                console.log("NIE ŁADUJE KUR");
+            }
         }
     });
 };
-appendMiniBlocks();
-displayProgresss();
+fromTop();
