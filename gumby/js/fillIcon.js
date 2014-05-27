@@ -66,7 +66,7 @@ function displayProgresss() {
                     currentBoxes = currentlyFilledRow.children();
                 currentBoxes.addClass("shining");
                 currentTextName.text(timesRun*5 + "%");
-            }, 50);
+            }, 100);
         }
     };
 //);
@@ -74,7 +74,7 @@ function displayProgresss() {
 appendMiniBlocks();
 
 function fromTop() {
-    var iconOffset = $(".squaredicon").offset().top,
+    var iconOffset = $(".skillBox h3").offset().top,
         windowHeight = $(window).height(),
         skillsTimesShown = 0;
     $(window).scroll(function() {
